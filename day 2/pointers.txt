@@ -1,0 +1,24 @@
+POINTERS ⏭️
+    1. Why pointers
+    2. Declaration
+    3. Initialization
+    4. Dereferncing
+    5. Dynamic allocation
+
+     ___________
+    |           |
+    |           | Heap
+    |           |
+     -----------
+    |           |
+CPU |           | Stack
+    |           |   
+     -----------
+    |           | Code
+    |           | section
+     -----------
+
+Usage of pointers ▶️
+    1. Accessing Heap memory
+    2. Accessing Resources
+    3. Parameter passing
