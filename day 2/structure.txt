@@ -1,0 +1,5 @@
+STRUCTURE :-
+    1. Defining structure
+    2. Size of a structure
+    3. Declaring a structure
+    4. Accessing members
