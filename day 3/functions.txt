@@ -1,0 +1,10 @@
+FUNCTIONS ▶️
+    -> Function is a piece of code that performs a specific task.
+    -> It is a group of related instructions to perform certain tasks.
+    -> Also called modules / procedures.
+    -> It helps into breakdown of code and better understanding of code.
+
+Parameter Passing ▶️
+    1. Pass by value
+    2. Pass by address
+    3. Pass by reference
