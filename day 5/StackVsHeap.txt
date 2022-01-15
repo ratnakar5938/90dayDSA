@@ -1,0 +1,8 @@
+1. About Main memory
+2. How a program use memory
+3. Static allocation
+4. Dynamic allocation
+
+Static versus dynamic memory allocation so for that we should understand memory so memory is divided into smaller addressable unit that is called as bytes.
+
+int a = 5; or int a; --> Static allocation
