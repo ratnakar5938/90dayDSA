@@ -6,3 +6,24 @@
 Static versus dynamic memory allocation so for that we should understand memory so memory is divided into smaller addressable unit that is called as bytes.
 
 int a = 5; or int a; --> Static allocation
+
+void fun2(int i)
+{
+    int a;
+}
+void fun()
+{
+    int x;
+    fun2(x);
+}
+void main()
+{
+    int a;
+    float b;
+
+    fun();
+    return 0;
+}
+
+main {a,b} --> fun {x} --> fun2 {i, a} // sequence of formation and inverse sequence of destroying
+this works like a stack {LIFO principle} that is y it is called stack.
