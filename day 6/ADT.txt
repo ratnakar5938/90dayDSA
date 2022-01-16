@@ -1,0 +1,14 @@
+Abstract Data Types ▶️
+    1. What is ADT
+    2. List ADT
+
+A data type is defined as →
+    1. Representation of data
+    2. Operation of data
+
+Abstract Data type is a data type in which we don't know the inner functionality but can use them without any hesitation
+
+List -> 8, 3, 9, 4, 6, 10, 12
+
+Data -> space for storing the element + capacity + size => array or linkedlist
+Operations -> traversal + insertion + deletion + search
