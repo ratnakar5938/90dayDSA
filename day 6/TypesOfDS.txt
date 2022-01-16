@@ -1,0 +1,23 @@
+Types of Data Structures ->
+    1. Physical Data Structures
+    2. Logical Data Structures
+
+1. PHYSICAL DATA STRUCTURES =>
+    1. Array 
+         _______________________
+        |  |  |  |  |  |  |  |  |
+         -----------------------
+
+    2. Linkedlist
+         _____      _____
+        |  |  | -> |  |  |
+         -----      -----
+
+2. LOGICAL DATA STRUCTURES =>
+    1. Stacks      // linear DS -> LIFO
+    2. Queues      // linear DS -> FIFO
+    3. Trees       // non-linear DS
+    4. Graphs      // non-linear DS
+    5. Hash Tables // tabular DS
+
+    --> Logical DS are implementations of physical DS
