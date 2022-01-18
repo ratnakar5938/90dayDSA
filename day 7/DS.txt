@@ -1,0 +1,19 @@
+Data structure is a storage that is used to store and organize data.
+It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+
+Note =>
+Data structure and data types are slightly different. Data structure is the collection of data types arranged in a specific order.
+
+Types of DS =>
+    1. Linear DS (elements are arranged in sequence one after the other)
+    2. Non-linear DS (elements are not in any sequence)
+
+Linear DS =>
+    1. Array -> elements in memory are arranged in continuous memory
+    2. Stack -> elements are stored in the LIFO principle
+    3. Queue -> data structure works in the FIFO principle where first element stored in the queue will be removed first
+    4. LinkedList -> data elements are connected through a series of nodes
+
+Non-linear DS => 
+    1. Graph -> each node is called vertex and each vertex is connected to other vertices through edges
+    2. Tree -> in this data structure, there can only be one edge between two vertices
