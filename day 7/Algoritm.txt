@@ -1,0 +1,2 @@
+In computer programming terms, an algorithm is a set of well-defined instructions to solve a particular problem. 
+It takes a set of input and produces a desired output.
