@@ -1,0 +1,8 @@
+=> Big-O Notation (O)
+    Big-O notation represents the upper bound of the running time of an algorithm. Thus, it gives the worst-case complexity of an algorithm.
+ 
+=> Omega Notation (Ω)
+    Omega notation represents the lower bound of the running time of an algorithm. Thus, it provides the best case complexity of an algorithm.
+
+=> Theta Notation (Θ)
+    Theta notation encloses the function from above and below. Since it represents the upper and the lower bound of the running time of an algorithm, it is used for analyzing the average-case complexity of an algorithm.
