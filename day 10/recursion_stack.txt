@@ -1,0 +1,3 @@
+While working with recursion as many memory stacks are used as many times the function is called.
+Once it reaches the end of the recursion using the conditional then it starts returning back and also releases the memory assigned to that function.
+The number of activation records are dependent upon the number of times the function is called.
