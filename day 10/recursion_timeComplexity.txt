@@ -1,0 +1,25 @@
+Finding Time Complexity of Recursion ▶️
+
+    void fun(int n)            --> T(n)
+    {
+        if (n > 0)             --> 1
+        {
+            cout << n << " ";  --> 1
+            fun(n - 1);        --> T(n-1)
+        }
+    }
+
+T(n) = 2 + T(n-1) , n > 0
+T(n) = 1 , n = 0
+
+Here every constant is replaced to 1 to ease the function 
+T(n) = T(n-1) + 1
+T(n-1) = T(n-2) + 1
+T(n) = T(n-2) + 1 + 1 = T(n-2) + 2
+T(n) = T(n-3) + 3 and so on...
+so
+T(n) = T(n-n) + n
+     = T(0) + n
+     = 1 + n
+    
+So time complexity of the function is O(n+1) = O(n) // constants can be neglected from time complexity equation
