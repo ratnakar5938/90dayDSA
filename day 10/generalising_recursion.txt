@@ -1,0 +1,13 @@
+Generalising Recursion ▶️
+
+    Type function(params)
+    {
+        if(base condition)
+        {
+            1. statement to be executed before calling // Ascending
+            2. function(params)
+            3. statement to be executed after returning // Descending
+        }
+    }
+
+▶️ Difference between recursion and loop is that Loop will only have ascending phase while recursion have both ascending and descending phase.
