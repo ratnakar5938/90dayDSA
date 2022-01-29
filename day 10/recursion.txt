@@ -1,0 +1,25 @@
+RECURSION ▶️
+    1. What is recursion
+    2. Example of recursion
+    3. Tracing recursion
+    4. Stack used in recursion
+    5. Time complexity
+    6. Recursive relation
+
+1. What is recursion?
+
+Type fun(param)
+{
+    if (base condition)
+    {
+        //code
+        fun(param);
+    }
+    else
+    {
+        //code
+    }
+}
+
+A function calls itself inside the function is called a recursive function and this method is called recursion.
+There must be a base condition that will terminate recursion so that it won't go infinitely.
