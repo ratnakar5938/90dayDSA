@@ -1,0 +1,38 @@
+Head Recursion ▶️
+▶️ If in a recursion the recursive call is the first statement in the function then it is called tail recursion.
+▶️ All execution will be done at the returning time and nothing is done at the calling time.
+
+eg.
+    type function( params )
+    {
+        if( condition )
+        {
+            function( params );
+            // code to be executed afterwards
+        }
+    }
+
+Head Recursion VS Loops 
+
+▶️ If a recursion have to do something in the returning phase of the function then it cannot be converted to loops directly.
+
+head recursion ▶️
+    void fun(int n)
+    {
+        if(n>0)
+        {
+            fun(n-1);
+            cout<<n<<endl;
+        }
+    }
+
+loop ▶️
+    void fun(int n)
+    {
+        int i = 1;
+        while(i<=n)
+        {
+            cout<<i<<endl;
+            i++;
+        }
+    }
