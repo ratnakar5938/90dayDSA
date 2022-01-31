@@ -1,0 +1,43 @@
+Tail Recursion ▶️ 
+▶️ If in a recursion the recursive call is the last statement in the function then it is called tail recursion.
+▶️ All execution will be done at the calling time and nothing is done at the returning time.
+
+eg. 
+    type function( params )
+    {
+        if( base condition )
+        {
+            // code to be executed
+            function( params );
+        }
+    }
+
+Tail Recursion VS Loops
+
+tail recursion ▶️
+    void fun(int n)
+    {
+        if(n>0)
+        {
+            cout<<n<<" ";
+            fun(n-1);
+        }
+    }
+
+    time complexity ▶️ O(n)
+    space complexity ▶️ O(n)
+
+loop ▶️
+    void fun(int n)
+    {
+        while(n>0)
+        {
+            cout<<n<<" ";
+            n--;
+        }
+    }
+
+    time complexity ▶️ O(n)
+    space complexity ▶️ O(1)
+
+As loops takes less space than tail recursion so it is efficient to use loops instead of tail recursion.
