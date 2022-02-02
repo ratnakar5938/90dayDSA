@@ -1,0 +1,15 @@
+Linear Recursion And Tree Recursion ▶️
+    ▶️ Linear recursion calls itself only one time inside the function. Eg. head and tail recursion.
+    ▶️ Tree recursion calls itslef multiple times inside the function.
+      Eg.
+        type function(params)
+        {
+            if(conditional)
+            {
+                // code
+                function(params);
+                // code
+                function(params);
+                // code
+            }
+        }
