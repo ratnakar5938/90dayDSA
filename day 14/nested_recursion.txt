@@ -1,0 +1,11 @@
+Nested Recursion ▶️
+    If in a recursion the function call itself within the function and also the parameters passed is a recursive call then the recursion is called Nested Recursion.
+
+    Eg. 
+        type func(params)
+        {
+            if(condiition)
+            {
+                func(func(params));
+            }
+        }
