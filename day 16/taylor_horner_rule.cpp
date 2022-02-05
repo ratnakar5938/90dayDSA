@@ -7,22 +7,22 @@ using namespace std;
 //     = 1 + (x/1)[1 + (x/2)[1 + (x/3) + (x^2/(3*4)]]
 //     = 1 + (x/1)[1 + (x/2)[1 + (x/3)[1 + (x/4)]]]
 
-double e_iter(double x, double n)
+double e_iter(int x, int n)
 {
     double result = 1;
     for (int i = n; i > 0; i--)
     {
-        result = 1 + (x / i) * result;
+        result = 1 + x * result / i;
     }
     return result;
 }
 
-double e(double x, double n)
+double e(int x, int n)
 {
     static double result = 1;
     if (n == 0)
         return result;
-    result = 1 + (x / n) * result;
+    result = 1 + x * result / n;
     return e(x, n - 1);
 }
 
