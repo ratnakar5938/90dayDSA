@@ -1,0 +1,10 @@
+Arrays ▶️
+    1. What is an array
+    2. Declaring and Initializing
+    3. Accessing array 
+
+▶️ Array is a collection of elements of the same data type
+▶️ Vector and Scalar variable
+    int x = 10; -> Scalar variable as it has a magnitude and stores single data
+    int A[5]; -> Vector variable as it stores a set of data
+▶️ In array the memory allocation is contigious and is done at the time of initialization
