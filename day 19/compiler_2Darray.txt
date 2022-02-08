@@ -6,11 +6,19 @@ Eg. int A[3][3];
         1   10  11  12
         2   20  21  22
 
-    Memory allocation ->
+    Memory allocation -> A[m][n];
     ▶️ Row-major mapping ->
     A -> 0   1   2   3   4   5   6   7   8
          00  01  02  10  11  12  20  21  22
-    A[i][j] -> Li = Lo + [i * z + j] * (size of variable)
+    A[i][j] -> Li = Lo + [i * n + j] * (size of variable)
     Here, Li -> required address
           Lo -> base address
-          z  -> total number of columns
+          n  -> total number of columns
+
+    ▶️ Column-major mapping ->
+    A -> 0   1   2   3   4   5   6   7   8
+         00  10  20  01  11  21  02  12  22
+    A[i][j] -> Li = Lo + [j * m + i] * (size of variable)
+    Here, Li -> required address
+          Lo -> base address
+          m  -> total number of rows
