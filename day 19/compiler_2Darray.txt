@@ -1,0 +1,16 @@
+We visualize 2D array as a 2D object with rows and columns but in memory they are arranged in a linear manner.
+Eg. int A[3][3];
+    Our representation ->
+    A ->    0   1   2
+        0   00  01  02
+        1   10  11  12
+        2   20  21  22
+
+    Memory allocation ->
+    ▶️ Row-major mapping ->
+    A -> 0   1   2   3   4   5   6   7   8
+         00  01  02  10  11  12  20  21  22
+    A[i][j] -> Li = Lo + [i * z + j] * (size of variable)
+    Here, Li -> required address
+          Lo -> base address
+          z  -> total number of columns
