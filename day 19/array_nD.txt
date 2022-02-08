@@ -1,0 +1,35 @@
+type A[d1][d2][d3][d4];
+
+▶️ Row-major mapping -> 
+Addr(A[i1][i2][i3][i4]) = Lo + [i1 * d2 * d3 * d4 + i2 * d3 * d4 + i3 * d4 + i4] * (size of variable)
+
+Generalisation => Lo + [∑ip (p = 1 -> n) * ∏dq (q = p+1 -> n)] * (size of variable)
+4D -> 3 + 2 + 1
+5D -> 4 + 3 + 2 + 1
+nD -> n-1 + n-2 + ... + 1 = n(n-1)/2 -> O(n^2)
+
+Horner's Rule ▶️
+4D -> i4 + i3 * d4 + i2 * d3 * d4 + i1 * d2 * d3 * d4
+    = i4 + d4 * [i3 + i2 * d3 + i1 * d2 * d3]
+    = i4 + d4 * {i3 + d3 * [i2 + i1 * d2]}
+
+4D -> 3
+5D -> 4
+nD -> n-1 -> O(n)
+
+▶️ Column-major mapping ->
+Addr(A[i1][i2][i3][i4]) = Lo + [i4 * d1 * d2 * d3 +  i3 * d1 * d2 + i2 * d1 + i1] * (size of variable)
+
+Generalisation => Lo + [∑ip (p = 1 -> n) * ∏dq (q = 1 -> p-1)] * (size of variable)
+4D -> 3 + 2 + 1
+5D -> 4 + 3 + 2 + 1
+nD -> n-1 + n-2 + ... + 1 = n(n-1)/2 -> O(n^2)
+
+Horner's Rule ▶️
+4D -> i1 + i2 * d1 + i3 * d1 * d2 + i4 * d1 * d2 * d3
+    = i1 + d1 * [i2 + i3 * d2 + i4 * d2 * d3]
+    = i1 + d1 * {i2 + d2 * [i3 + i4 * d3]}
+
+4D -> 3
+5D -> 4
+nD -> n-1 -> O(n)
