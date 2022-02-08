@@ -1,0 +1,9 @@
+int x = 10; --> compiler converts the name of the variable to the address of the memory allocated to that data type so that machine can understand the variable.
+▶️ The memory for the variable is allocated at the time of execution.
+
+▶️ Compiler stores the address of an array in the similar manner
+▶️ Compiler saves the first address inside the array and uses it to refer to other element
+eg. int A[5]; -> A - 0 (200/201) - 1 (202/203) - 2 (204/205) - 3 (206/207) - 4 (208/209) 
+    compiler saves 200 in A.
+    Then to get A[3] -> it devies a formula -> Li = Lo + i*(size of variable) -> A[3] = 200 + 3*(2) = 206
+    Here Li is required address and Lo is base address.
