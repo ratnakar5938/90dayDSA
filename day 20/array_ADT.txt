@@ -1,0 +1,20 @@
+ADT stands for Abstract Data Type ▶️ ADT is a data type which has representation and operations in it.
+▶️ Array data structure is basically provided in every programming language as a basic data structure but the operations are not provided by the compiler that is what is implemented by the user.
+▶️ Data structure array along with all operations form Array ADT.
+
+Data representation ->
+▶️ Array space
+▶️ Size
+▶️ length (Number of elements)
+
+Operations -> 
+▶️ Display()
+▶️ Add(x) or Append(x)
+▶️ Insert(index, x)
+▶️ Delete(index)
+▶️ Search(x)
+▶️ Get(index)
+▶️ Set(index, x)
+▶️ Max() & Min()
+▶️ Reverse()
+▶️ Shift() or Rotate()
