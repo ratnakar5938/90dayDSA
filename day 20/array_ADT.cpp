@@ -18,6 +18,7 @@ public:
 
     void add(int x);
     void display();
+    void insert(int index, int x);
 };
 
 void Array::add(int x)
@@ -35,6 +36,22 @@ void Array::display()
     cout << endl;
 }
 
+void Array::insert(int index, int x)
+{
+    if (length < size && index <= length)
+    {
+        for (int i = length; i >= index; i--)
+            A[i] = A[i - 1];
+
+        A[index] = x;
+        length++;
+    }
+    else
+    {
+        cout << "Not enough space!!!" << endl;
+    }
+}
+
 int main()
 {
     int x;
@@ -43,13 +60,15 @@ int main()
     Array arr(x);
 
     int n;
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < x - 2; i++)
     {
         cout << "Enter element no. " << (i + 1) << " : ";
         cin >> n;
         arr.add(n);
     }
 
+    arr.display();
+    arr.insert(2, 5);
     arr.display();
 
     return 0;
