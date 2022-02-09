@@ -1,0 +1,7 @@
+Types of searching ▶️
+    1. Linear Search
+    2. Binary Search
+
+Linear Search ▶️
+In linear search we search an element linearly (i.e. one by one in one direction).
+If the key element is not found then the search is unsuccessful else it is successful.

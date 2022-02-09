@@ -20,6 +20,7 @@ public:
     void display();
     void insert(int index, int x);
     int delete_element(int x);
+    int search(int x);
 };
 
 void Array::add(int x)
@@ -73,6 +74,17 @@ int Array::delete_element(int index)
 // Time complexity -> Best Case = O(1)
 //                 -> Worst Case = O(n)
 
+int Array::search(int x)
+{
+    for (int i = 0; i < length; i++)
+        if (A[i] == x)
+            return i;
+    return -1;
+}
+// Time complexity -> Best Case = O(1)
+//                 -> Worst Case = O(n)
+// average case -> (1 + 2 + 3 ... + n)/n = n(n+1)/2n = (n+1)/2 -> O(n)
+
 int main()
 {
     int x;
@@ -93,6 +105,10 @@ int main()
     arr.display();
     cout << arr.delete_element(1) << endl;
     arr.display();
+
+    cout << "Enter the element u want to search : ";
+    cin >> n;
+    cout << "The index of " << n << " is : " << arr.search(n) << endl;
 
     return 0;
 }
