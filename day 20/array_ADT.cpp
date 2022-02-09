@@ -19,6 +19,7 @@ public:
     void add(int x);
     void display();
     void insert(int index, int x);
+    int delete_element(int x);
 };
 
 void Array::add(int x)
@@ -52,6 +53,20 @@ void Array::insert(int index, int x)
     }
 }
 
+int Array::delete_element(int index)
+{
+    if (index < length)
+    {
+        int temp = A[index];
+        for (int i = index; i < length - 1; i++)
+            A[i] = A[i + 1];
+        length--;
+        return temp;
+    }
+    cout << "Not possible" << endl;
+    return -1;
+}
+
 int main()
 {
     int x;
@@ -69,6 +84,8 @@ int main()
 
     arr.display();
     arr.insert(2, 5);
+    arr.display();
+    cout << arr.delete_element(1) << endl;
     arr.display();
 
     return 0;
