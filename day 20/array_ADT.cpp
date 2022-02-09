@@ -21,6 +21,7 @@ public:
     void insert(int index, int x);
     int delete_element(int x);
     int search(int x);
+    int search_imp(int x);
 };
 
 void Array::add(int x)
@@ -85,6 +86,29 @@ int Array::search(int x)
 //                 -> Worst Case = O(n)
 // average case -> (1 + 2 + 3 ... + n)/n = n(n+1)/2n = (n+1)/2 -> O(n)
 
+void swap(int *x, int *y)
+{
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int Array::search_imp(int x)
+{
+    for (int i = 0; i < length; i++)
+        if (A[i] == x)
+        {
+            // transposition
+            // swap(A[i], A[i - 1]);
+            // return i - 1;
+
+            // move to front
+            swap(A[i], A[0]);
+            return 0;
+        }
+    return -1;
+}
+
 int main()
 {
     int x;
@@ -109,6 +133,8 @@ int main()
     cout << "Enter the element u want to search : ";
     cin >> n;
     cout << "The index of " << n << " is : " << arr.search(n) << endl;
+    cout << "The index of " << n << " is : " << arr.search_imp(n) << endl;
+    arr.display();
 
     return 0;
 }
