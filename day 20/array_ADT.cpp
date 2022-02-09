@@ -27,6 +27,7 @@ void Array::add(int x)
     A[length] = x;
     length++;
 }
+// Time Complexity -> O(1)
 
 void Array::display()
 {
@@ -36,6 +37,7 @@ void Array::display()
     }
     cout << endl;
 }
+// Time Complexity -> O(n)
 
 void Array::insert(int index, int x)
 {
@@ -52,6 +54,8 @@ void Array::insert(int index, int x)
         cout << "Not enough space!!!" << endl;
     }
 }
+// Time complexity -> Best Case = O(1)
+//                 -> Worst Case = O(n)
 
 int Array::delete_element(int index)
 {
@@ -66,6 +70,8 @@ int Array::delete_element(int index)
     cout << "Not possible" << endl;
     return -1;
 }
+// Time complexity -> Best Case = O(1)
+//                 -> Worst Case = O(n)
 
 int main()
 {
