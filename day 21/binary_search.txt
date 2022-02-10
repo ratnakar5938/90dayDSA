@@ -1,0 +1,7 @@
+Binary Search ▶️
+    ▶️ The prerequisite for binary search is that the given array must be sorted.
+    ▶️ To perform binary search we need three indices -> lower, higher and mid
+        mid = (low + higher)/2
+        low -> initial element of the list
+        higher -> last element of the list
+    ▶️ On every step we divide the list into two halves and we reject the part of list that doesn't contain the element.
