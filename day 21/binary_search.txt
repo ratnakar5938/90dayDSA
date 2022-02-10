@@ -5,3 +5,8 @@ Binary Search ▶️
         low -> initial element of the list
         higher -> last element of the list
     ▶️ On every step we divide the list into two halves and we reject the part of list that doesn't contain the element.
+
+Time complexity (successful search) ->
+    Best case -> O(1)
+    Worst case -> O(log n)
+Time complexity for any unsuccessful searches -> O(log n)
