@@ -128,6 +128,23 @@ void find_missing2(Array<int> *arr)
     }
 }
 
+// works on continious list of integers
+void find_multiple_missing(Array<int> *arr)
+{
+    int diff = arr->A[0];
+    for (int i = 0; i < arr->length; i++)
+    {
+        if (arr->A[i] - i != diff)
+        {
+            while (diff < arr->A[i] - i)
+            {
+                cout << "Missing element is : " << i + diff << endl;
+                diff++;
+            }
+        }
+    }
+}
+
 int main()
 {
     int x;
@@ -157,6 +174,8 @@ int main()
 
     arr1.display();
     // find_missing(&arr1);
-    find_missing2(&arr1);
+    // find_missing2(&arr1);
+
+    find_multiple_missing(&arr1);
     return 0;
 }
