@@ -161,6 +161,22 @@ int Count_duplicate(Array<T> *arr)
     return numOfDuplicate;
 }
 
+void Duplicate_hash(Array<int> *arr)
+{
+
+    int length = arr->A[arr->length - 1] + 1;
+    int *A = new int[length]{0};
+
+    for (int i = 0; i < arr->length; i++)
+    {
+        A[arr->A[i]]++;
+    }
+    for (int i = 0; i < length; i++)
+        if (A[i] > 1)
+            cout << i << " is duplicated " << A[i] << " times" << endl;
+}
+// time complexity -> O(n)
+
 int main()
 {
     int x;
@@ -188,9 +204,11 @@ int main()
     }
 
     arr.display();
-    Duplicate(&arr);
-    int totalDuplicates = Count_duplicate(&arr);
-    cout << "Number of total duplicates : " << totalDuplicates << endl;
+    // Duplicate(&arr);
+    // int totalDuplicates = Count_duplicate(&arr);
+    // cout << "Number of total duplicates : " << totalDuplicates << endl;
+
+    Duplicate_hash(&arr);
 
     return 0;
 }
