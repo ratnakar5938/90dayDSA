@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void duplicte(char *s)
+void duplicate(char *s)
 {
     int *hash = new int[26]{0};
     for (int i = 0; s[i] != '\0'; i++)
@@ -13,9 +13,34 @@ void duplicte(char *s)
 }
 // time complexity -> O(n)
 
+void duplicate2(char *s)
+{
+    long int H = 0, X = 0;
+    for (int i = 0; s[i] != '\0'; i++)
+    {
+        X = 1;
+        X = X << (s[i] - 97);
+        if (X & H > 0)
+            cout << s[i] << " has duplicates" << endl;
+        else
+            H = X | H;
+    }
+}
+
 int main()
 {
     char A[] = "finding";
-    duplicte(A);
+    // duplicate(A);
+    // duplicate2(A);
+    long int H = 0, X = 0;
+    for (int i = 0; A[i] != '\0'; i++)
+    {
+        X = 1;
+        X = X << (A[i] - 97);
+        if ((X & H) > 0)
+            cout << A[i] << " has duplicates" << endl;
+        else
+            H = X | H;
+    }
     return 0;
 }
