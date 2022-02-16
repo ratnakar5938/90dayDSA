@@ -16,6 +16,7 @@ public:
     void set(int, int, int);
     int get(int, int);
     void display();
+    ~Matrix() { delete[] A; }
 };
 
 void Matrix::set(int i, int j, int x)
